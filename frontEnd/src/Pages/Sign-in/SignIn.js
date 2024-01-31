@@ -42,7 +42,7 @@ const SignIn = () => {
     }
     else{
     
-    axios.post('http://localhost:8080/auth/signin', data  ).then((res)=>{
+    axios.post('https://feedcraft-mern-api.vercel.app/auth/signin', data  ).then((res)=>{
       console.log(res)
       const Token = res.data.token
       localStorage.setItem('userId' , res.data.userId)

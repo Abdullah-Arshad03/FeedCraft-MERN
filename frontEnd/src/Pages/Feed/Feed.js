@@ -80,7 +80,7 @@ const navigate = useNavigate()
     setToken(storedToken);
    
     axios
-      .get("http://localhost:8080/feed/posts", {
+      .get("https://feedcraft-mern-api.vercel.app/feed/posts", {
         headers: {
           Authorization: "bearer " + token,
         },
@@ -114,7 +114,7 @@ const navigate = useNavigate()
     }
     else{
     axios
-      .post("http://localhost:8080/feed/post", formData, {
+      .post("https://feedcraft-mern-api.vercel.app/feed/post", formData, {
         headers: {
           "Content-Type": "multipart/form-data", // Set the content type
           Authorization: "bearer " + token,

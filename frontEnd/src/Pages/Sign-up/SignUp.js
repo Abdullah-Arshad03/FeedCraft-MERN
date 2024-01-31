@@ -43,7 +43,7 @@ const SignUp = () => {
       }
       else{
         console.log(data);
-         fetch('http://localhost:8080/auth/signup', {
+         fetch('https://feedcraft-mern-api.vercel.app/auth/signup', {
           method : 'POST',
           body : JSON.stringify(data),
           headers : {

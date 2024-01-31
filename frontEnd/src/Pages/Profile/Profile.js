@@ -20,7 +20,7 @@ useEffect(()=>{
     setToken(getToken)
     console.log(getToken)
     console.log(token)
-    axios.get('http://localhost:8080/profile/posts', {
+    axios.get('https://feedcraft-mern-api.vercel.app/profile/posts', {
         headers :{
             Authorization : 'Bearer ' + getToken
         }
